@@ -48,15 +48,6 @@ class Calculator:
         self.result = self.num1 % self.num2
 
     @staticmethod
-    def get_number_input(prompt):
-        while True:
-            try:
-                number = float(input(prompt))
-                return number
-            except ValueError:
-                print('Please enter a valid number.')
-
-    @staticmethod
     def get_user_choice():
         return input('Operation: [ +, -, *, /, ^, √, % ]: ')
 
