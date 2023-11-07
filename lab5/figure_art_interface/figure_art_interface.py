@@ -1,8 +1,43 @@
-
+from abc import ABC, abstractmethod
 from figures.figure import Figure
 from figures.figures_3d.cube import Cube
 from figures.figures_2d.square import Square
 from helpers.helpers import text_file_saver
+
+
+class Command(ABC):
+    @abstractmethod
+    def execute(self):
+        pass
+
+
+class Generate3DFigureCommand(Command):
+    def __init__(self, figure_interface):
+        self.figure_interface = figure_interface
+
+    def execute(self):
+        print(self.figure_interface.generate_3d_figure())
+
+
+class SetSizeCommand(Command):
+    def __init__(self, figure_interface, new_size):
+        self.figure_interface = figure_interface
+        self.new_size = new_size
+
+    def execute(self):
+        self.figure_interface.set_size(self.new_size)
+
+
+class SetColorCommand(Command):
+    def __init__(self, figure_interface, new_color):
+        self.figure_interface = figure_interface
+        self.new_color = new_color
+
+    def execute(self):
+        self.figure_interface.set_color(self.new_color)
+
+
+# Add more command classes for SetType, SetPaddings, Generate2DFigure, SaveToFile3D, and SaveToFile2D
 
 
 class FigureArtInterface(Figure):
@@ -12,6 +47,12 @@ class FigureArtInterface(Figure):
         self.left_padding = 5
         self.top_padding = 5
         self.bottom_padding = 5
+        self.commands = {
+            1: Generate3DFigureCommand(self),
+            2: SetSizeCommand(self, 0),
+            3: SetColorCommand(self, ""),
+            # Add more command instances here
+        }
 
     def set_type(self, type):
         self.type = type
