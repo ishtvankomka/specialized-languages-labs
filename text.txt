@@ -1,4 +1,0 @@
-
-[{'id': 7830, 'uid': '3818174b-5505-4af7-990c-358982b55ca0', 'type': 'O', 'rh_factor': '+', 'group': 'A-'}, {'id': 6243, 'uid': '4e937649-fb1a-4337-abf2-2b13ee901c57', 'type': 'B', 'rh_factor': '-', 'group': 'O+'}, {'id': 1964, 'uid': 'f1f36c80-549b-4f17-b149-9526ffb31364', 'type': 'AB', 'rh_factor': '+', 'group': 'A+'}]
-
-[{'id': 596, 'uid': '1a450beb-a816-4993-b873-b0b5901d654c', 'brand': 'Blue Star', 'equipment': 'Bachelor griller'}, {'id': 4911, 'uid': '71760629-56cc-4af3-8fa7-e84c980a1471', 'brand': 'LG', 'equipment': 'Combo washer dryer'}, {'id': 4502, 'uid': 'a95a153b-0491-4c85-92b7-783345a187e4', 'brand': 'Admiral', 'equipment': 'Drawer dishwasher'}, {'id': 9729, 'uid': '19980655-954f-496a-91a0-a01a93806978', 'brand': 'Siemens', 'equipment': 'Combo washer dryer'}, {'id': 2375, 'uid': 'e8d1ad98-30dc-4e3c-8940-7870642a32c2', 'brand': 'LG', 'equipment': 'Washing machine'}]
