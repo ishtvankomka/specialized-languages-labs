@@ -1,5 +1,3 @@
-
-
 import logging
 from classes.facade.facade import Facade
 

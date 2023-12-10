@@ -1,4 +1,4 @@
-from lab1.calculator.calculator import calculator
+from calculator.calculator import calculator
 
 
 def main():

@@ -1,5 +1,5 @@
+from calculator.menu.menu import display_main_menu, get_main_menu_choice, display_other_menu, get_other_menu_choice
 from math_operations.math_operations import add, subtract, multiply, divide, power, square_root, modulus
-from menu.menu import display_main_menu, get_main_menu_choice, display_other_menu, get_other_menu_choice
 
 
 def get_float_input(prompt):

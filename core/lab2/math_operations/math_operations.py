@@ -1,5 +1,5 @@
 import math
-from lab2.math_operations.math_operation import MathOperation
+from math_operations.math_operation import MathOperation
 
 
 class Addition(MathOperation):
